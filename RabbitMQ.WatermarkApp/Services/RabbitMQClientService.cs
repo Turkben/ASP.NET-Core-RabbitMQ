@@ -27,8 +27,7 @@ namespace RabbitMQ.WatermarkApp.Services
         {
             _connection = _connectionFactory.CreateConnection();
 
-            //if(_channel.IsOpen)
-            if (_channel is {IsOpen:true } ) 
+            if (_channel is { IsOpen: true })
             {
                 return _channel;
             }
