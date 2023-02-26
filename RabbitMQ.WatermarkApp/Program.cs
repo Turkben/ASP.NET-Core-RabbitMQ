@@ -14,7 +14,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseInMemoryDatabase(databaseName: "productDb");
 });
 
-//DI ConnectionFactory
+//DI rabbitmq ConnectionFactory
 builder.Services.AddSingleton(sp => {
     var connectionString = builder.Configuration.GetConnectionString("RabbitMQ");
     return new ConnectionFactory()
