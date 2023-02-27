@@ -22,7 +22,7 @@ IHost host = Host.CreateDefaultBuilder(args)
                 DispatchConsumersAsync = true
             };
         });
-        services.AddSingleton<RabbitMQClientService>();
+        services.AddSingleton<RabbitMQClientService>();      
         services.AddHostedService<Worker>();
     })
     .Build();
