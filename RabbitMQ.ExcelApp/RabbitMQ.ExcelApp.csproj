@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RabbitMQ.Shared.ExcelApp\RabbitMQ.Shared.ExcelApp.csproj" />
+    <ProjectReference Include="..\RabbitMQ.Shared.ExcelApp\RabbitMQ.ExcelApp.Shared.csproj" />
   </ItemGroup>
 
 </Project>
