@@ -2,6 +2,23 @@
 @{
     ViewData["Title"] = "Files";
 }
+@section Scripts{
+    <script>
+        $(document).ready(function(){
+            var hasStartCreatingExcel = '@TempData["StartCreatingExcel"]';
+            if (hasStartCreatingExcel){
+
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'Excel Creation has start',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+            }
+        });
+    </script>
+}
 
 <h1>Files</h1>
 

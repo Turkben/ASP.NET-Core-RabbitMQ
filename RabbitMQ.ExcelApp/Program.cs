@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using RabbitMQ.Client;
 using RabbitMQ.ExcelApp;
+using RabbitMQ.ExcelApp.Hubs;
 using RabbitMQ.ExcelApp.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -34,6 +35,8 @@ builder.Services.AddSingleton(sp => {
 
 builder.Services.AddSingleton<RabbitMQClientService>();
 builder.Services.AddSingleton<RabbitMQPublisher>();
+
+builder.Services.AddSignalR();
 
 var app = builder.Build();
 
@@ -79,6 +82,8 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.MapHub<MyHub>("/MyHub");
 
 app.MapControllerRoute(
     name: "default",
