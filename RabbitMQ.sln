@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.ExcelApp.ConsumerW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.WordToPdfApp.Producer", "RabbitMQ.WordToPdfApp.Producer\RabbitMQ.WordToPdfApp.Producer.csproj", "{3DDD815B-DD8B-47A3-906A-ABAA9B347E9F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.WordToPdfApp.ConsumerConsole", "RabbitMQ.WordToPdf.ConsumerConsole\RabbitMQ.WordToPdfApp.ConsumerConsole.csproj", "{87E33EB3-FD3A-45AA-B18E-4F7CF3DC867E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3DDD815B-DD8B-47A3-906A-ABAA9B347E9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DDD815B-DD8B-47A3-906A-ABAA9B347E9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DDD815B-DD8B-47A3-906A-ABAA9B347E9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87E33EB3-FD3A-45AA-B18E-4F7CF3DC867E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87E33EB3-FD3A-45AA-B18E-4F7CF3DC867E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87E33EB3-FD3A-45AA-B18E-4F7CF3DC867E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87E33EB3-FD3A-45AA-B18E-4F7CF3DC867E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
